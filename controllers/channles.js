@@ -5,7 +5,6 @@ const getAll = async (req, res) => {
         const page = parseInt(req.query.page) || 1;
         const limit = parseInt(req.query.limit) || 2;
         const skip = (page - 1) * limit;
-           console.log("fgfg");
         const filter = req.query;
         const data = await getAllChannels(filter, skip, limit);
 
