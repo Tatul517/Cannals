@@ -6,6 +6,6 @@ router.post('/', create);
 router.get('/', getAll);
 router.delete('/:id', remove); 
 router.put('/:id', update);   
-
+console.log('this is check');
 export default router;
 
